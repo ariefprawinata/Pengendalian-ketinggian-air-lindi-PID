@@ -1,0 +1,13 @@
+// perintah awal git
+> git init // utk inisialisasi projek baru
+> git branch // utk cek branch lokal
+> git branch "branch baru" // utk buat branch baru (tanpa petik 2)
+> git checkout "branch" // untuk switch ke branch lain (tanpa petik 2)
+> git remote add origin "url git" // utk nambah url/origin di projek git (tanpa petik 2)
+
+// perintah perubahan git
+> git add --all atau > git add -A // utk menambah file atau repo baru
+> git commit -am "informasi perubahan ...." // utk mengkonfirmasi perubahan git
+> git push origin branch // utk upload program jika ada perubahan dari user (ganti branch sesuai projek "misal master/main")
+> git push -f origin branch // utk upload paksa program jika ada perubahan dari user (ganti branch sesuai projek "misal master/main")
+> git pull origin branch // utk download program jika ada perubahan dari user (ganti branch sesuai projek "misal master/main")
