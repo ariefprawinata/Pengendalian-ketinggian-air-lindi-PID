@@ -33,7 +33,8 @@ void pidMain() {
   
   // float uS = sonar.ping();
   // PV =10-(uS/US_ROUNDTRIP_CM);
-  PV = sonar.ping_cm();
+  // PV = sonar.ping_cm();
+  PV = jarakSensor(10);
   PVf = (PV + a*PVf_1)/(a + 1);
   PVfix = PVf; // kalibrasi sensor
 
@@ -56,4 +57,10 @@ void pidMain() {
   PID = PID/2;
   MV = PID*51;
   MV = SV*51;
+}
+
+float jarakSensor(float jarak_min) {
+  float value = sonar.ping_result;
+  float result = jarak_min - (value/US_ROUNDTRIP_CM);
+  return result;
 }
