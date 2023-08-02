@@ -53,6 +53,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  /*
   pidMain();
   if (PV < SV){                      
   running = true;
@@ -86,4 +87,9 @@ void loop() {
     eint_1 = eint;
   }
   PVf_1 = PVf;
+  */
+
+  PV = jarakSensor(10);
+  Serial.print(PV);
+  Serial.println(" CM");
 }
